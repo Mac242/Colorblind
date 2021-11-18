@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class Respawn_Labyrint : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject player;
+    public Transform SpawnPoint;
+    [SerializeField] int numberOfAllowedCollisions;
+    
     void Start()
     {
-        
+        numberOfAllowedCollisions = 3;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        if (numberOfAllowedCollisions <= 0)
+        {
+            player.transform.position = SpawnPoint.transform.position;
+            numberOfAllowedCollisions = 3;
+
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("Respawn"))
+        {
+            numberOfAllowedCollisions -= 1;
+            Debug.Log("Collision");
+        }
         
     }
 }
