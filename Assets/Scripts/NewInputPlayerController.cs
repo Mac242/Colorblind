@@ -6,9 +6,8 @@ using UnityEngine.InputSystem;
 public class NewInputPlayerController : MonoBehaviour
 {
     private Vector2 movementInput;
-    public float speed = 200f;
-    private float horizontalInput; 
-    private float verticalInput;    
+    public float speed = 50f;
+  
 
     // Start is called before the first frame update
     void Start()
