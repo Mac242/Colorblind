@@ -31,5 +31,6 @@ public class Respawn_Labyrint : MonoBehaviour
             Debug.Log("Collision");
         }
         
+        
     }
 }
