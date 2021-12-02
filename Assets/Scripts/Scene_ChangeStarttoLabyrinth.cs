@@ -9,6 +9,7 @@ public class Scene_ChangeStarttoLabyrinth : MonoBehaviour
 	[SerializeField] GameObject playerGreen;
 	private bool greenIn;
 	private bool redIn;
+	
     // Start is called before the first frame update
     void Start()
     {
