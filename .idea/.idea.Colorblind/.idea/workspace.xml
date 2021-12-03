@@ -13,6 +13,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObstacleSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/moveObstacle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneLoad_LabyrinthToObstacles.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../woche_01_grundlagen/Unity Project/Assets/SCRIPT/Week04/Galaxian/Spawnmanager_Targets.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../woche_01_grundlagen/Unity Project/Assets/SCRIPT/Week04/Asteroids/Spawner_Asteroids.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Countdown.cs" root0="FORCE_HIGHLIGHTING" />
@@ -66,7 +67,7 @@
       <updated>1637233873798</updated>
       <workItem from="1637233921468" duration="7247000" />
       <workItem from="1637251778124" duration="3336000" />
-      <workItem from="1638443722914" duration="14687000" />
+      <workItem from="1638443722914" duration="15718000" />
     </task>
     <servers />
   </component>

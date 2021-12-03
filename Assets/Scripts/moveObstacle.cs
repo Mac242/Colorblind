@@ -5,6 +5,11 @@ using UnityEngine;
 public class moveObstacle : MonoBehaviour
 {
     public float speed;
+
+    public float moveX;
+
+    public float moveY;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +19,6 @@ public class moveObstacle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate((Vector3.down) * speed * Time.deltaTime);
+        transform.Translate(new Vector2(moveX, moveY) * speed * Time.deltaTime);
     }
 }
