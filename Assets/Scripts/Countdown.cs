@@ -34,7 +34,7 @@ public class Countdown : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Respawn"))
+        if (other.gameObject.CompareTag("Enemy"))
         {
             timer = 60f;
             player.transform.position = spawnPoint.transform.position;

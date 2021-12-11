@@ -27,4 +27,5 @@ public class NewInputPlayerController : MonoBehaviour
     {
         movementInput = context.ReadValue<Vector2>();
     }
+    
 }

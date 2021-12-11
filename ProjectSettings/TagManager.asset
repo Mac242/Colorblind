@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Lab_Walls
+  - Enemy
   layers:
   - Default
   - TransparentFX

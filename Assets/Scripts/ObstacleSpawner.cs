@@ -1,19 +1,22 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ObstacleSpawner : MonoBehaviour
 {
     public GameObject[] obstacles;
     
-    public float spawnRate = 5f;
-    public float spawnDelay = 5f;
+    public float spawnRate = 3f;
+    public float spawnDelay = 1f;
 
     public float maxX;
     public float minX;
-
     public float maxY;
     public float minY;
+    
+    
 
     // Start is called before the first frame update
     void Start()
@@ -25,15 +28,21 @@ public class ObstacleSpawner : MonoBehaviour
     void Update()
     {
     }
-
+    
     void Spawn()
     {
-        for (int i = 0; i< obstacles.Length; i++)
-        {
-            GameObject clone = Instantiate(obstacles[i], new Vector3(Random.Range(minX, maxX),Random.Range(minY, maxY), 0), Quaternion.identity);
-            Destroy(clone, 10f);
-        }
-        
+        GameObject clone = Instantiate(obstacles[Random.Range(0,2)], new Vector3(Random.Range(minX, maxX), Random.Range(minY,maxY), 0 ), Quaternion.identity);
+        Destroy(clone, 15f);
     }
-    
+
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+  
+   
 }
