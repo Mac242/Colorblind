@@ -144,7 +144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6818124875854366108, guid: 50c04fb6281ef4b998f7f9fb8954f382, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1
+      value: -1.8
       objectReference: {fileID: 0}
     - target: {fileID: 6818124875854366108, guid: 50c04fb6281ef4b998f7f9fb8954f382, type: 3}
       propertyPath: m_LocalPosition.y
@@ -678,10 +678,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 653da0531022f4c5c8fc8f60ebd680f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 0}
-  player2: {fileID: 0}
-  spawnPoint1: {fileID: 0}
-  spawnPoint2: {fileID: 0}
+  player1: {fileID: 608720964}
+  player2: {fileID: 968884629}
+  spawnPoint1: {fileID: 206446705}
+  spawnPoint2: {fileID: 1198058731}
   numberOfAllowedCollisions: 0
 --- !u!50 &608720966
 Rigidbody2D:
@@ -1112,10 +1112,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 653da0531022f4c5c8fc8f60ebd680f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 968884629}
-  player2: {fileID: 608720964}
-  spawnPoint1: {fileID: 0}
-  spawnPoint2: {fileID: 0}
+  player1: {fileID: 608720964}
+  player2: {fileID: 968884629}
+  spawnPoint1: {fileID: 206446705}
+  spawnPoint2: {fileID: 1198058731}
   numberOfAllowedCollisions: 0
 --- !u!50 &968884631
 Rigidbody2D:

@@ -16,6 +16,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/moveObstacle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneLoad_LabyrinthToObstacles.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Countdown.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CountdownGreenPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Respawn_Labyrint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NewInputPlayerController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -66,7 +67,7 @@
       <workItem from="1637233921468" duration="7247000" />
       <workItem from="1637251778124" duration="3336000" />
       <workItem from="1638443722914" duration="16732000" />
-      <workItem from="1639214282550" duration="12726000" />
+      <workItem from="1639214282550" duration="20832000" />
     </task>
     <servers />
   </component>

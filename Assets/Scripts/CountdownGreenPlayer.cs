@@ -1,38 +1,24 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Random = System.Random;
 
-
-public class Countdown : MonoBehaviour
+public class CountdownGreenPlayer : MonoBehaviour
 {
-    public float timer;
     public GameObject player;
-    public TextMeshProUGUI timerText;
+    public GameObject _Countdown;
     public bool collision;
-
+    
+    
     // Start is called before the first frame update
     void Start()
     {
-        timer = 90f;
+        collision = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        timer -= Time.deltaTime; // counting seconds down
-        int minutes = Mathf.FloorToInt(timer / 60f);
-        int seconds = Mathf.FloorToInt(timer % 60f);
-        timerText.text = "Timer: " + string.Format("{0:00}:{1:00}", minutes, seconds); // Display Timer ; Format / Text
-
-        if (timer <= 0)
-        {
-            Winning();
-        }
-        
         if (collision == true)
         {
             Gamepad.current.SetMotorSpeeds(0.5f, 1f);
@@ -43,15 +29,16 @@ public class Countdown : MonoBehaviour
         }
     }
 
+    // Update is called once per frame
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-             timer = 90f;
-             collision = true;
+            _Countdown.GetComponent<Countdown>().timer = 90f;
+            collision = true;
         }
     }
-    
+
     private void OnCollisionExit2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Enemy"))
@@ -59,10 +46,4 @@ public class Countdown : MonoBehaviour
             collision = false;
         }
     }
-
-    void Winning()
-    {
-        
-    }
-
 }

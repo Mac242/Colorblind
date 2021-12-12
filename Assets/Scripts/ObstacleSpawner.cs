@@ -8,7 +8,7 @@ public class ObstacleSpawner : MonoBehaviour
 {
     public GameObject[] obstacles;
     
-    public float spawnRate = 3f;
+    public float spawnRate = 2f;
     public float spawnDelay = 1f;
 
     public float maxX;
@@ -31,7 +31,7 @@ public class ObstacleSpawner : MonoBehaviour
     
     void Spawn()
     {
-        GameObject clone = Instantiate(obstacles[Random.Range(0,2)], new Vector3(Random.Range(minX, maxX), Random.Range(minY,maxY), 0 ), Quaternion.identity);
+        GameObject clone = Instantiate(obstacles[Random.Range(0,4)], new Vector3(Random.Range(minX, maxX), Random.Range(minY,maxY), 0 ), Quaternion.identity);
         Destroy(clone, 15f);
     }
 
