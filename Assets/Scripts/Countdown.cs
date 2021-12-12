@@ -12,12 +12,12 @@ public class Countdown : MonoBehaviour
     public float timer;
     public GameObject player;
     public TextMeshProUGUI timerText;
-    public bool collision;
 
     // Start is called before the first frame update
     void Start()
     {
         timer = 90f;
+        
     }
 
     // Update is called once per frame
@@ -33,14 +33,6 @@ public class Countdown : MonoBehaviour
             Winning();
         }
         
-        if (collision == true)
-        {
-            Gamepad.current.SetMotorSpeeds(0.5f, 1f);
-        }
-        else
-        {
-            Gamepad.current.SetMotorSpeeds(0, 0);
-        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -48,17 +40,10 @@ public class Countdown : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
              timer = 90f;
-             collision = true;
         }
     }
     
-    private void OnCollisionExit2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            collision = false;
-        }
-    }
+   
 
     void Winning()
     {
