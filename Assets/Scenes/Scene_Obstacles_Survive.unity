@@ -326,7 +326,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 217670732}
   _Countdown: {fileID: 370714510}
-  collision: 0
 --- !u!1001 &224903521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -680,7 +679,6 @@ MonoBehaviour:
   timer: 0
   player: {fileID: 370714510}
   timerText: {fileID: 956267354}
-  collision: 0
 --- !u!1 &415979013
 GameObject:
   m_ObjectHideFlags: 0

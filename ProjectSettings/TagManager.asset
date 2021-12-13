@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Lab_Walls
   - Enemy
+  - Enviroment
   layers:
   - Default
   - TransparentFX

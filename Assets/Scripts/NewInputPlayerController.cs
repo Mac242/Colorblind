@@ -6,22 +6,34 @@ using UnityEngine.InputSystem;
 public class NewInputPlayerController : MonoBehaviour
 {
     private Vector2 movementInput;
+    private Vector2 movementInputX;
+    private float jumpInput;
     public float speed = 5f;
     public bool collision;
+    public float jumpForce;
+    public bool onGround;
   
 
     // Start is called before the first frame update
     void Start()
     {
         collision = false;
+        jumpForce = 70;
+        onGround = false;
     }
 
     // Update is called once per frame
     void Update()
     {
 
+        transform.Translate(Vector2.right * Time.deltaTime * speed * movementInputX);
         transform.Translate(Vector2.right * Time.deltaTime * speed * movementInput.x);
         transform.Translate(Vector2.up * Time.deltaTime * speed * movementInput.y);
+
+       
+        transform.Translate(Vector2.up * Time.deltaTime * jumpForce * jumpInput);
+        
+        
         
         if (collision == true)
         {
@@ -38,6 +50,24 @@ public class NewInputPlayerController : MonoBehaviour
     {
         movementInput = context.ReadValue<Vector2>();
     }
+    public void OnMoveX(InputAction.CallbackContext context)
+    {
+        movementInputX = context.ReadValue<Vector2>();
+    }
+
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        if (onGround == true)
+        {
+            jumpInput = context.ReadValue<float>();
+            Debug.Log("JUMP"); 
+        }
+        else
+        {
+            jumpInput = 0;
+        }
+        
+    }
     
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -48,6 +78,10 @@ public class NewInputPlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Respawn"))
         {
             collision = true;
+        }
+        if (other.gameObject.CompareTag("Enviroment"))
+        {
+            onGround = true;
         }
     }
     
@@ -60,6 +94,10 @@ public class NewInputPlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Respawn"))
         {
             collision = false;
+        }
+        if (other.gameObject.CompareTag("Enviroment"))
+        {
+            onGround = false;
         }
     }
 }
