@@ -35,7 +35,7 @@
                     "id": "59e47836-3f7f-4a79-8d2a-7f49054464df",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Tap"
+                    "interactions": ""
                 }
             ],
             "bindings": [
