@@ -259,6 +259,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 46973397873181584, guid: 570fa0f17ca3d4ae2816fedde815d53f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7482667652216324306, guid: fe7f87937a09847ae8958556181a06ee, type: 3}
+    - target: {fileID: 46973397873181584, guid: 570fa0f17ca3d4ae2816fedde815d53f, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
@@ -324,6 +328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
+    - {fileID: 46973397873181587, guid: 570fa0f17ca3d4ae2816fedde815d53f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 570fa0f17ca3d4ae2816fedde815d53f, type: 3}
 --- !u!1 &126937705
 GameObject:
@@ -4111,6 +4116,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3880752693902023261, guid: e2f8f87b33d25410991d4ef49bebb0cd, type: 3}
   m_PrefabInstance: {fileID: 3880752694409552301}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &1087941120
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087941119}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!50 &1087941125
 Rigidbody2D:
   serializedVersion: 4
@@ -5242,6 +5273,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 46973397873181292, guid: 570fa0f17ca3d4ae2816fedde815d53f, type: 3}
   m_PrefabInstance: {fileID: 44350204}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &1385815948
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385815947}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!50 &1385815953
 Rigidbody2D:
   serializedVersion: 4
@@ -7877,10 +7934,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3880752693902023263, guid: e2f8f87b33d25410991d4ef49bebb0cd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7482667652216324306, guid: fe7f87937a09847ae8958556181a06ee, type: 3}
+    - target: {fileID: 3880752693902023263, guid: e2f8f87b33d25410991d4ef49bebb0cd, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3880752693902023260, guid: e2f8f87b33d25410991d4ef49bebb0cd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e2f8f87b33d25410991d4ef49bebb0cd, type: 3}
 --- !u!1001 &6818124876116289030
 PrefabInstance:
