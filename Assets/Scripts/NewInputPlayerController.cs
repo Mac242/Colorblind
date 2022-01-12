@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Haptics;
 
 public class NewInputPlayerController : MonoBehaviour
 {
@@ -9,15 +10,14 @@ public class NewInputPlayerController : MonoBehaviour
     private Vector2 movementInputX;
     private float jumpInput;
     public float speed = 5f;
-    public bool collision;
     public float jumpForce;
     public bool onGround;
-  
+
 
     // Start is called before the first frame update
     void Start()
     {
-        collision = false;
+        
         jumpForce = 70;
         onGround = false;
     }
@@ -30,26 +30,15 @@ public class NewInputPlayerController : MonoBehaviour
         transform.Translate(Vector2.right * Time.deltaTime * speed * movementInput.x);
         transform.Translate(Vector2.up * Time.deltaTime * speed * movementInput.y);
 
-       
+
         transform.Translate(Vector2.up * Time.deltaTime * jumpForce * jumpInput);
-        
-        
-        
-        if (collision == true)
-        {
-            Gamepad.current.SetMotorSpeeds(0.75f, 1.5f);
-            InputSystem.ResumeHaptics();
-        }
-        else
-        {
-            InputSystem.ResetHaptics();
-        }
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
         movementInput = context.ReadValue<Vector2>();
     }
+
     public void OnMoveX(InputAction.CallbackContext context)
     {
         movementInputX = context.ReadValue<Vector2>();
@@ -60,42 +49,27 @@ public class NewInputPlayerController : MonoBehaviour
         if (onGround == true)
         {
             jumpInput = context.ReadValue<float>();
-            Debug.Log("JUMP"); 
+            Debug.Log("JUMP");
         }
         else
         {
             jumpInput = 0;
         }
-        
+
     }
-    
+
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            collision = true;
-        }
-        if (other.gameObject.CompareTag("Respawn"))
-        {
-            collision = true;
-        }
-        if (other.gameObject.CompareTag("Enviroment"))
+
+        if (other.gameObject.CompareTag("Enviroment") || CompareTag("Player"))
         {
             onGround = true;
         }
     }
-    
+
     private void OnCollisionExit2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            collision = false;
-        }
-        if (other.gameObject.CompareTag("Respawn"))
-        {
-            collision = false;
-        }
-        if (other.gameObject.CompareTag("Enviroment"))
+        if (other.gameObject.CompareTag("Enviroment") || CompareTag("Player"))
         {
             onGround = false;
         }

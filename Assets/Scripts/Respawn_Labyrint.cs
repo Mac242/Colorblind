@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
 public class Respawn_Labyrint : MonoBehaviour
@@ -31,10 +32,19 @@ public class Respawn_Labyrint : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Respawn"))
         {
+            Gamepad.current.SetMotorSpeeds(.5f, 1f);
             numberOfAllowedCollisions -= 1;
             Debug.Log("Collision");
         }
         
         
+    }
+    
+    private void OnCollisionExit2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("Respawn"))
+        {
+            Gamepad.current.SetMotorSpeeds(0f, 0f);
+        }
     }
 }
