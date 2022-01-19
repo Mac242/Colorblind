@@ -799,8 +799,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825402319}
-  m_LocalRotation: {x: 0.007901043, y: -0.000000011771698, z: -9.301159e-11, w: 0.9999688}
-  m_LocalPosition: {x: -0.000006714148, y: -0.000006198883, z: 285.2085}
+  m_LocalRotation: {x: 0.007901025, y: 0.000000017038246, z: 1.3462383e-10, w: 0.9999688}
+  m_LocalPosition: {x: 0.000009717995, y: 0.0000038146973, z: 285.2085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1904943944}
@@ -1181,7 +1181,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874617296}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -112.5, y: -61, z: 0}
+  m_LocalPosition: {x: -117, y: -59, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children:
   - {fileID: 1239973913}
@@ -1741,7 +1741,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204971375}
-  m_LocalRotation: {x: 0.000000019557772, y: -0.000000034226282, z: -5.408966e-10, w: 1}
+  m_LocalRotation: {x: -0, y: -2.1649879e-10, z: -3.421471e-12, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3457,7 +3457,7 @@ Camera:
   far clip plane: 350
   field of view: 60
   orthographic: 1
-  orthographic size: 37.5
+  orthographic size: 65
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3480,7 +3480,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904943940}
-  m_LocalRotation: {x: -0.007901023, y: -0.00000002245779, z: -1.7744506e-10, w: 0.9999688}
+  m_LocalRotation: {x: -0.007901025, y: -0.000000017254767, z: -1.3633462e-10, w: 0.9999688}
   m_LocalPosition: {x: 2.05, y: -4.5067425, z: -285.17288}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4521,3 +4521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc83d594c4dbe4478aa9cb4347c859c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 874617300}
+  top: {fileID: 0}
+  bottom: {fileID: 0}
+  complete: {fileID: 0}
