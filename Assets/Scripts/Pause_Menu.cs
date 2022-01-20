@@ -24,6 +24,7 @@ public class Pause_Menu : MonoBehaviour
             Debug.Log("PauseMenue");
             pauseMenu.SetActive(true);
             gameIsPaused = true;
+            Cursor.visible = true;
             
             if (gameIsPaused==true && Input.GetKey(KeyCode.Joystick1Button13))
             {
@@ -40,6 +41,7 @@ public class Pause_Menu : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
         gameIsPaused = false;
+        Cursor.visible = false;
     }
 
     public void QuitGame()

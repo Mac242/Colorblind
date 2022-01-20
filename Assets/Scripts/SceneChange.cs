@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEditor.Build.Content;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,13 +7,13 @@ public class SceneChange : MonoBehaviour
 	[SerializeField] GameObject playerGreen;
 	private bool greenIn;
 	private bool redIn;
-	public int buildIndex;
+	public int currentBuildIndex;
 	
     // Start is called before the first frame update
     void Start()
     {
-	    buildIndex = SceneManager.GetActiveScene().buildIndex;
-	    Debug.Log(buildIndex);
+	    currentBuildIndex = SceneManager.GetActiveScene().buildIndex;
+	    Debug.Log(currentBuildIndex);
 	    greenIn = false;
 	    redIn = false;
     }
@@ -44,7 +40,7 @@ public class SceneChange : MonoBehaviour
 
 	    if (greenIn == true && redIn == true)
 	    {
-		    SceneManager.LoadScene(buildIndex+1);
+		    SceneManager.LoadScene(currentBuildIndex+1);
 	    }
     }
 }

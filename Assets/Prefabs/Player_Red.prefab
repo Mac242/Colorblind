@@ -97,7 +97,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50
-  collision: 0
   jumpForce: 0
   onGround: 0
 --- !u!114 &3880752693902023257
@@ -125,18 +124,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: fd3eb6c1-d9c9-4ba0-961f-897954dc8d2f
-    m_ActionName: Player/Move[/DualShock4GamepadHID/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 72a9a1e6-872a-4077-abb4-58bf405b89a4
-    m_ActionName: Player/Look[/DualShock4GamepadHID/rightStick,/Mouse/delta]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 1af36015-e3be-4396-891c-a10ef798a131
-    m_ActionName: Player/Fire[/DualShock4GamepadHID/rightTrigger,/Mouse/leftButton]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: c95124f5-b67a-49bf-af0d-a3bee57ad19c
@@ -193,8 +180,28 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: e47ba42b-037d-49d0-8356-7b81787a2088
     m_ActionName: Gamepad_Controller/Movement[/DualShock4GamepadHID/leftStick/up,/DualShock4GamepadHID/leftStick/down,/DualShock4GamepadHID/leftStick/left,/DualShock4GamepadHID/leftStick/right]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9a923543-1184-4c6f-a8ee-200c7189113f
+    m_ActionName: Gamepad_Controller/Jump[/DualShock4GamepadHID/buttonSouth,/DualShock4GamepadHID/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ebd4baea-3044-4f8a-945c-7d3f5d23627a
+    m_ActionName: Gamepad_Controller/Pause[/DualShock4GamepadHID/touchpadButton,/DualShock4GamepadHID/touchpadButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2e68f4d4-5b46-461a-932d-de33f1653180
+    m_ActionName: Gamepad_Controller2/Movement[/DualShock4GamepadHID/leftStick/up,/DualShock4GamepadHID/leftStick/up,/DualShock4GamepadHID/leftStick/down,/DualShock4GamepadHID/leftStick/down,/DualShock4GamepadHID/leftStick/left,/DualShock4GamepadHID/leftStick/left,/DualShock4GamepadHID/leftStick/right,/DualShock4GamepadHID/leftStick/right]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 531f4f46-bb66-4f14-92c2-77c5214a085d
+    m_ActionName: Gamepad_Controller2/Jump[/DualShock4GamepadHID/buttonSouth,/DualShock4GamepadHID/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7953bf8e-20c2-46da-8f2f-b5ecacf25fe8
+    m_ActionName: Gamepad_Controller2/Pause[/DualShock4GamepadHID/touchpadButton,/DualShock4GamepadHID/touchpadButton]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Gamepad
-  m_DefaultActionMap: Gamepad_Controller
+  m_DefaultActionMap: 0bb04218-8cf8-45f0-8c8e-a8fbfb850244
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

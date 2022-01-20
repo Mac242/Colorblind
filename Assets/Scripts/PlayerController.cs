@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public Transform player;
     public Transform target;
     [SerializeField] private Transform[] points;
-    private LineRenderer lineRenderer;
+    private LineRenderer _lineRenderer;
     public float maxRange;
     private bool toFar;
     public BoxCollider2D boxColliderTop;
@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        lineRenderer = GetComponent<LineRenderer>();
+        _lineRenderer = GetComponent<LineRenderer>();
         maxRange = 13f;
         Cursor.visible = false;
         boxColliderBottom.enabled = false;
@@ -35,20 +35,21 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        LineSetUp();
+        
         if (toFar == true)
         {
-            lineRenderer.enabled = true;
+            _lineRenderer.enabled = true;
             
             for (int i = 0; i < points.Length; i++)
             {
-                lineRenderer.SetPosition(i, points[i].position);
+                _lineRenderer.SetPosition(i, points[i].position);
             }
         }
 
         if (toFar== false)
         {
-            lineRenderer.enabled = false;
+            _lineRenderer.enabled = false;
         }
 
         var heading = player.position - target.position;
@@ -75,8 +76,7 @@ public class PlayerController : MonoBehaviour
 
         void LineSetUp()
         {
-            lineRenderer.positionCount = points.Length;
-            this.points = points;
+            _lineRenderer.positionCount = points.Length;
         }
     }
 }

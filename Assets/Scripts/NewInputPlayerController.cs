@@ -61,7 +61,7 @@ public class NewInputPlayerController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
 
-        if (other.gameObject.CompareTag("Enviroment") || CompareTag("Player"))
+        if (other.gameObject.CompareTag("Ground") || CompareTag("Player"))
         {
             onGround = true;
         }
@@ -69,7 +69,7 @@ public class NewInputPlayerController : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Enviroment") || CompareTag("Player"))
+        if (other.gameObject.CompareTag("Ground") || CompareTag("Player"))
         {
             onGround = false;
         }
