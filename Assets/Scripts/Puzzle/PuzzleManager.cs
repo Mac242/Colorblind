@@ -24,6 +24,8 @@ public class PuzzleManager : MonoBehaviour
     public PlaceN2 _PlaceN2;
     public PlaceU  _PlaceU ;
     public PlaceE  _PlaceE ;
+
+    public bool allLettersPlaced;
     
     // Start is called before the first frame update
 
@@ -31,11 +33,7 @@ public class PuzzleManager : MonoBehaviour
     {
         door.SetActive(true);
         arrow.SetActive(false);
-        
-        
-      
-       
-       
+        allLettersPlaced = false;
     }
 
     // Update is called once per frame
@@ -53,7 +51,9 @@ public class PuzzleManager : MonoBehaviour
             _PlaceT.tPlacedtrue == true && _PlaceI.iPlacedtrue == true && _PlaceN2.n2Placedtrue &&
             _PlaceU.uPlacedtrue == true && _PlaceE.ePlacedtrue == true)
         {
+            allLettersPlaced = true;
             Debug.Log("WIN");
+            
         }
     }
 }

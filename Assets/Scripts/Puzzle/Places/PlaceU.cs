@@ -6,6 +6,7 @@ public class PlaceU : MonoBehaviour
 {
     public GameObject uPlaced;
     public bool uPlacedtrue;
+    public PuzzleManager _PuzzleManager;
     
     // Start is called before the first frame update
     void Start()
@@ -20,14 +21,28 @@ public class PlaceU : MonoBehaviour
        
     }
     
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("U"))
         {
-            Debug.Log("C Placed");
-            Destroy(other.gameObject);
-            uPlaced.SetActive(true);
+            Debug.Log("U Placed");
             uPlacedtrue = true;
+
+            if (_PuzzleManager.allLettersPlaced == true)
+            {
+                Destroy(other.gameObject);
+                uPlaced.SetActive(true);
+            }
         }
+    }
+    
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("U"))
+        {
+            Debug.Log("U unPlaced");
+            uPlacedtrue = false; 
+        }
+           
     }
 }
