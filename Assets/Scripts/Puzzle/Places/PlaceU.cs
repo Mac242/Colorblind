@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class PlaceU : MonoBehaviour
 {
-    public GameObject uPlaced;
     public bool uPlacedtrue;
     public PuzzleManager _PuzzleManager;
     
     // Start is called before the first frame update
     void Start()
     {
-        uPlaced.SetActive(false);
         uPlacedtrue = false;
     }
 
@@ -27,12 +25,6 @@ public class PlaceU : MonoBehaviour
         {
             Debug.Log("U Placed");
             uPlacedtrue = true;
-
-            if (_PuzzleManager.allLettersPlaced == true)
-            {
-                Destroy(other.gameObject);
-                uPlaced.SetActive(true);
-            }
         }
     }
     

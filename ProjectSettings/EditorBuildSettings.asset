@@ -5,11 +5,32 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Scene_Obstacles_Survive.unity
+    guid: 9b6ddff3fdb0c47b99eda5c35476e61b
+  - enabled: 1
+    path: Assets/Scenes/Menu_Start.unity
+    guid: 78419c005555e45b3bfab7de9929e75b
+  - enabled: 0
+    path: Assets/Scenes/Pause Menu.unity
+    guid: e64c22aae540d47b583c8568a93ba969
+  - enabled: 1
+    path: Assets/Scenes/1_Scene_Begin to Play_easy.unity
+    guid: 6fb9044e0158f45c9be2d89488f04f72
+  - enabled: 1
+    path: Assets/Scenes/2_scene_Jump n Run _Start_easy.unity
+    guid: bd196dd8d30414ee5a8ecb39e2fc227b
+  - enabled: 1
+    path: Assets/Scenes/4_Scene_Labyrinth_medium.unity
+    guid: d5dd577428f0d4abbb2297140b95779c
+  - enabled: 1
+    path: Assets/Scenes/5_Jump n Run_medium.unity
+    guid: dc1c5473b0f1f475f83b8f7ffa615255
+  - enabled: 1
+    path: Assets/Scenes/6_Puzzle_medium.unity
+    guid: a789a1c50d05c41c1a7dba196afce862
   - enabled: 1
     path: Assets/Scenes/8_Scene_Labyrinth_hard.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/Scenes/Scene_Obstacles_Survive.unity
-    guid: 9b6ddff3fdb0c47b99eda5c35476e61b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 8eec97613a6aa7e45b88e6dad3df4d95, type: 2}
