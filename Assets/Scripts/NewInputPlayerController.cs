@@ -17,15 +17,13 @@ public class NewInputPlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        jumpForce = 70;
-        onGround = false;
+        jumpForce = 65;
+        Debug.Log(onGround);
     }
 
     // Update is called once per frame
     void Update()
     {
-
         transform.Translate(Vector2.right * Time.deltaTime * speed * movementInputX);
         transform.Translate(Vector2.right * Time.deltaTime * speed * movementInput.x);
         transform.Translate(Vector2.up * Time.deltaTime * speed * movementInput.y);
@@ -55,7 +53,6 @@ public class NewInputPlayerController : MonoBehaviour
         {
             jumpInput = 0;
         }
-
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -65,11 +62,7 @@ public class NewInputPlayerController : MonoBehaviour
         {
             onGround = true;
         }
-    }
-
-    private void OnCollisionExit2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Ground") || CompareTag("Player"))
+        else
         {
             onGround = false;
         }

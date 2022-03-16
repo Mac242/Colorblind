@@ -9,11 +9,14 @@ public class Pause_Menu : MonoBehaviour
     public GameObject pauseMenu;
 
     public bool gameIsPaused;
+
+    public int scene;
     // Start is called before the first frame update
     void Start()
     {
         pauseMenu.SetActive(false);
         gameIsPaused = false;
+        scene = SceneManager.GetActiveScene().buildIndex;
     }
 
     private void Update()
@@ -31,7 +34,6 @@ public class Pause_Menu : MonoBehaviour
                 PlayGame();
             }
         }
-
         
     }
 
@@ -47,5 +49,15 @@ public class Pause_Menu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(scene);
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(0);
     }
 }

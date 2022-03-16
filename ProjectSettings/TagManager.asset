@@ -16,6 +16,7 @@ TagManager:
   - U
   - E
   - Ground
+  - RampStopper
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - Player
   - Enviroment
   - LetterBounds
-  - 
+  - RampStopper
   - 
   - 
   - 
