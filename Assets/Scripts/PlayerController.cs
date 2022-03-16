@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     {
         _lineRenderer = GetComponent<LineRenderer>();
         maxRange = 13f;
-        Cursor.visible = false;
+        
         boxColliderBottom.enabled = false;
         boxColliderTop.enabled = false;
         boxColliderLeft.enabled = false;
@@ -35,6 +35,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Cursor.visible = false;
+        
         LineSetUp();
         
         if (toFar == true)

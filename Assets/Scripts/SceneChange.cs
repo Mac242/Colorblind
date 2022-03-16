@@ -8,6 +8,7 @@ public class SceneChange : MonoBehaviour
 	private bool greenIn;
 	private bool redIn;
 	public int currentBuildIndex;
+	public GameObject winPanel;
 	
     // Start is called before the first frame update
     void Start()
@@ -16,12 +17,17 @@ public class SceneChange : MonoBehaviour
 	    Debug.Log(currentBuildIndex);
 	    greenIn = false;
 	    redIn = false;
+	    winPanel.SetActive((false));
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+	    if (greenIn == true && redIn == true && currentBuildIndex==6 )
+	    {
+		    Time.timeScale = 0;
+		    winPanel.SetActive(true);
+	    }
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -38,7 +44,7 @@ public class SceneChange : MonoBehaviour
 		    redIn = true;
 	    }
 
-	    if (greenIn == true && redIn == true)
+	    if (greenIn == true && redIn == true && currentBuildIndex < 6)
 	    {
 		    SceneManager.LoadScene(currentBuildIndex+1);
 	    }

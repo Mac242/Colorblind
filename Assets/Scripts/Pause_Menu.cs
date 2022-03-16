@@ -17,23 +17,26 @@ public class Pause_Menu : MonoBehaviour
         pauseMenu.SetActive(false);
         gameIsPaused = false;
         scene = SceneManager.GetActiveScene().buildIndex;
+        
     }
 
     private void Update()
     {
+        Cursor.visible = true;
         if ( gameIsPaused==false && Input.GetKey(KeyCode.Joystick1Button13))
         {
             Time.timeScale = 0;
-            Debug.Log("PauseMenue");
+            Debug.Log("Pause!");
             pauseMenu.SetActive(true);
             gameIsPaused = true;
-            Cursor.visible = true;
+           
             
             if (gameIsPaused==true && Input.GetKey(KeyCode.Joystick1Button13))
             {
                 PlayGame();
             }
         }
+        
         
     }
 

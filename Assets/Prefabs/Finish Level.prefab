@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 2943017694930952550}
   - component: {fileID: 2943017694930952545}
   m_Layer: 0
-  m_Name: Finish
+  m_Name: Finish Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130,6 +130,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRed: {fileID: 0}
   playerGreen: {fileID: 0}
+  currentBuildIndex: 0
+  winPanel: {fileID: 76968611520200536, guid: 54726359d257440eca41e084880ebc17, type: 3}
 --- !u!61 &2943017694930952545
 BoxCollider2D:
   m_ObjectHideFlags: 0

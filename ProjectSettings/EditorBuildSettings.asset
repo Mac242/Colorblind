@@ -13,7 +13,7 @@ EditorBuildSettings:
     guid: 78419c005555e45b3bfab7de9929e75b
   - enabled: 0
     path: 
-    guid: e64c22aae540d47b583c8568a93ba969
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/1_Scene_Begin to Play_easy.unity
     guid: 6fb9044e0158f45c9be2d89488f04f72
@@ -32,7 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/8_Scene_Labyrinth_hard.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menue_End.unity
     guid: ff972f5e8d6a84baca4ea08b1fa51f8a
   m_configObjects:

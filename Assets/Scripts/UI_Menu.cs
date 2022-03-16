@@ -13,7 +13,7 @@ public class UI_Menu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("1_Scene_Begin to Play_easy");
+        SceneManager.LoadScene(1);
     }
 
     public void QuitGame()

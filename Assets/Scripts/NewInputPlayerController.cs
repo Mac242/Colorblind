@@ -27,9 +27,9 @@ public class NewInputPlayerController : MonoBehaviour
         transform.Translate(Vector2.right * Time.deltaTime * speed * movementInputX);
         transform.Translate(Vector2.right * Time.deltaTime * speed * movementInput.x);
         transform.Translate(Vector2.up * Time.deltaTime * speed * movementInput.y);
-
-
         transform.Translate(Vector2.up * Time.deltaTime * jumpForce * jumpInput);
+
+        Cursor.visible = false;
     }
 
     public void OnMove(InputAction.CallbackContext context)
