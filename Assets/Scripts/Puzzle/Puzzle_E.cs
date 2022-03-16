@@ -8,6 +8,10 @@ public class Puzzle_E : MonoBehaviour
     public GameObject bottom;
     public GameObject complete;
     public bool completed;
+    public ParticleSystem _ParticleSystem;
+    public GameObject letterComplete;
+    private bool emitting;
+    private float counting;
     
 
     // Start is called before the first frame update
@@ -17,12 +21,22 @@ public class Puzzle_E : MonoBehaviour
         top.SetActive(true);
         bottom.SetActive(true);
         completed = false;
+        letterComplete.SetActive(false);
+        emitting = false;
+        counting = 1f;
     }
 
     // Update is called once per frame
     void Update()
     {
+        CountDown();
         
+        if (emitting == true && counting < 0)
+        {
+            letterComplete.SetActive(false);
+            top.SetActive(false);
+            bottom.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -31,9 +45,23 @@ public class Puzzle_E : MonoBehaviour
         {
             Debug.Log("E Created");
             complete.SetActive(true);
-            top.SetActive(false);
-            bottom.SetActive(false);
             completed = true;
+            DoEmit();
+            emitting = true;
+            letterComplete.SetActive(true);
         }
+    }
+    void DoEmit()
+    {
+        _ParticleSystem.Emit(100);
+    }
+
+    private void CountDown()
+    {
+        if (emitting == true)
+        {
+            counting -= Time.deltaTime;
+        }
+        
     }
 }

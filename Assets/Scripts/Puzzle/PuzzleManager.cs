@@ -15,6 +15,7 @@ public class PuzzleManager : MonoBehaviour
 
     public GameObject door;
     public GameObject doorTwo;
+    public GameObject doorTwoTwo;
     public GameObject arrow;
 
     public PlaceC  _PlaceC ;
@@ -34,6 +35,7 @@ public class PuzzleManager : MonoBehaviour
     {
         door.SetActive(true);
         doorTwo.SetActive(true);
+        doorTwoTwo.SetActive(true);
         arrow.SetActive(false);
         allLettersPlaced = false;
     }
@@ -55,6 +57,7 @@ public class PuzzleManager : MonoBehaviour
         {
             allLettersPlaced = true;
             doorTwo.SetActive(false);
+            doorTwoTwo.SetActive(false);
         }
     }
 }
