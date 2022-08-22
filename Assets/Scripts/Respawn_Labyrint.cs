@@ -50,14 +50,14 @@ public class Respawn_Labyrint : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Respawn") && gameObject == player1)
         {
-            Gamepad.current.SetMotorSpeeds(.5f, .8f);
+            //Gamepad.current.SetMotorSpeeds(.5f, .8f);
             numberOfAllowedCollisions -= 1;
             Debug.Log("Collision Player 1");
         }
         
         if (col.gameObject.CompareTag("Respawn") && gameObject == player2)
         {
-            Gamepad.current.SetMotorSpeeds(.5f, .8f);
+            //Gamepad.current.SetMotorSpeeds(.5f, .8f);
             numberOfAllowedCollisions -= 1;
             Debug.Log("Collision Player 2");
         }
@@ -69,12 +69,12 @@ public class Respawn_Labyrint : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Respawn") && gameObject== player1)
         {
-            Gamepad.current.SetMotorSpeeds(0f, 0f);
+            //Gamepad.current.SetMotorSpeeds(0f, 0f);
         }
         
         if (col.gameObject.CompareTag("Respawn") && gameObject== player2)
         {
-            Gamepad.current.SetMotorSpeeds(0f, 0f);
+           // Gamepad.current.SetMotorSpeeds(0f, 0f);
         }
     }
 }
