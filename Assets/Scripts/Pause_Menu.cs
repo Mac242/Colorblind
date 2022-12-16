@@ -1,8 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
+using UnityEditor.Rendering.LookDev;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
+using Cursor = UnityEngine.Cursor;
 
 public class Pause_Menu : MonoBehaviour
 {
@@ -22,24 +28,20 @@ public class Pause_Menu : MonoBehaviour
 
     private void Update()
     {
-        Cursor.visible = true;
-        if ( gameIsPaused==false && Input.GetKey(KeyCode.Joystick1Button13))
+        Cursor.visible = false;
+        
+        if (Input.GetKey(KeyCode.Joystick1Button3) || Input.GetKey(KeyCode.JoystickButton3))
         {
-            Time.timeScale = 0;
             Debug.Log("Pause!");
-            pauseMenu.SetActive(true);
             gameIsPaused = true;
-           
-            
-            if (gameIsPaused==true && Input.GetKey(KeyCode.Joystick1Button13))
-            {
-                PlayGame();
-            }
+            Time.timeScale = 0;
         }
-        
-        
+        else
+        {
+            gameIsPaused = false;
+            Time.timeScale = 1;
+        }
     }
-
     
     public void PlayGame()
     {

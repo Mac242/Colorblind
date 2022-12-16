@@ -6,17 +6,18 @@ using UnityEngine.InputSystem.Haptics;
 
 public class NewInputPlayerController : MonoBehaviour
 {
-    private Vector2 movementInput;
+    public Vector2 movementInput;
     private Vector2 movementInputX;
     private float jumpInput;
-    public float speed = 5f;
+    public float speed = 50f;
     public float jumpForce;
     public bool onGround;
-
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        
         jumpForce = 65;
         Debug.Log(onGround);
     }

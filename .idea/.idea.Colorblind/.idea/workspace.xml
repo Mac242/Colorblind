@@ -4,14 +4,16 @@
     <list default="true" id="be3c2963-3023-4a44-8704-8a253f87f91b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Colorblind/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colorblind/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Colorblind.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Colorblind.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem.inputsettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem.inputsettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/1_Scene_Begin to Play_easy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1_Scene_Begin to Play_easy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Respawn_Labyrint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Respawn_Labyrint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseSensitiveTest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2_scene_Jump n Run _Start_easy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2_scene_Jump n Run _Start_easy.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/4_Scene_Labyrinth_medium.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/4_Scene_Labyrinth_medium.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/5_Jump n Run_medium.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/5_Jump n Run_medium.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/6_Puzzle_medium.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/6_Puzzle_medium.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/8_Scene_Labyrinth_hard.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/8_Scene_Labyrinth_hard.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu_Start.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu_Start.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menue_End.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menue_End.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewInputPlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewInputPlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pause_Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pause_Menu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +53,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Respawn_Labyrint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI_Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/moveObstacle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.3.0/InputSystem/Actions/InputBindingResolver.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -61,16 +64,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "rider.run.widget.enabled.cache": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/build/Colorblind20220120.app/Contents/MacOS/Colorblind" />
@@ -128,6 +131,7 @@
       <workItem from="1642592446496" duration="28850000" />
       <workItem from="1647094723349" duration="12860000" />
       <workItem from="1660637260236" duration="1236000" />
+      <workItem from="1671204584330" duration="8518000" />
     </task>
     <servers />
   </component>
