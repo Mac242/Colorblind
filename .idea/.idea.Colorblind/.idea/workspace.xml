@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be3c2963-3023-4a44-8704-8a253f87f91b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pause_Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pause_Menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +120,7 @@
       <workItem from="1647094723349" duration="12860000" />
       <workItem from="1660637260236" duration="1236000" />
       <workItem from="1671204584330" duration="8518000" />
-      <workItem from="1671440621980" duration="350000" />
+      <workItem from="1671440621980" duration="1178000" />
     </task>
     <servers />
   </component>
