@@ -30,7 +30,7 @@ public class Pause_Menu : MonoBehaviour
     {
         Cursor.visible = false;
         
-        if (Input.GetKey(KeyCode.Joystick1Button3) || Input.GetKey(KeyCode.JoystickButton3))
+        if (pauseMenu.activeInHierarchy)
         {
             Debug.Log("Pause!");
             gameIsPaused = true;

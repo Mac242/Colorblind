@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be3c2963-3023-4a44-8704-8a253f87f91b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colorblind/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colorblind/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Colorblind.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Colorblind.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/1_Scene_Begin to Play_easy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1_Scene_Begin to Play_easy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2_scene_Jump n Run _Start_easy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2_scene_Jump n Run _Start_easy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/4_Scene_Labyrinth_medium.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/4_Scene_Labyrinth_medium.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/5_Jump n Run_medium.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/5_Jump n Run_medium.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/6_Puzzle_medium.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/6_Puzzle_medium.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/8_Scene_Labyrinth_hard.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/8_Scene_Labyrinth_hard.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu_Start.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu_Start.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menue_End.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menue_End.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewInputPlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewInputPlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pause_Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pause_Menu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +120,7 @@
       <workItem from="1647094723349" duration="12860000" />
       <workItem from="1660637260236" duration="1236000" />
       <workItem from="1671204584330" duration="8518000" />
+      <workItem from="1671440621980" duration="350000" />
     </task>
     <servers />
   </component>
