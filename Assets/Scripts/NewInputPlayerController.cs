@@ -17,7 +17,6 @@ public class NewInputPlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
         jumpForce = 65;
         Debug.Log(onGround);
     }
@@ -31,8 +30,9 @@ public class NewInputPlayerController : MonoBehaviour
         transform.Translate(Vector2.up * Time.deltaTime * jumpForce * jumpInput);
 
         Cursor.visible = false;
-    }
 
+    }
+    
     public void OnMove(InputAction.CallbackContext context)
     {
         movementInput = context.ReadValue<Vector2>();

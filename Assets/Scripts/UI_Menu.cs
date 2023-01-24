@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 public class UI_Menu : MonoBehaviour
 
 {
+
     void Start()
     {
-        Cursor.visible = true;
+        Cursor.visible = false;
     }
 
     public void PlayGame()
@@ -20,6 +21,7 @@ public class UI_Menu : MonoBehaviour
     {
         Application.Quit();
     }
+    
 }
 
 
