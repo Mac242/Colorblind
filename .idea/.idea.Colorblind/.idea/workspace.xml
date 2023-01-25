@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be3c2963-3023-4a44-8704-8a253f87f91b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Colorblind/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colorblind/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/6_Puzzle_medium.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/6_Puzzle_medium.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Green_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Green_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Red_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Red_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +126,7 @@
       <workItem from="1671204584330" duration="8518000" />
       <workItem from="1671440621980" duration="2026000" />
       <workItem from="1671549920087" duration="2411000" />
-      <workItem from="1674550602950" duration="762000" />
+      <workItem from="1674550602950" duration="1361000" />
     </task>
     <servers />
   </component>
