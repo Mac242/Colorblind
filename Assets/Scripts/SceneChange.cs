@@ -23,7 +23,7 @@ public class SceneChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-	    if (greenIn == true && redIn == true && currentBuildIndex==6 )
+	    if (greenIn == true && redIn == true && currentBuildIndex==8 )
 	    {
 		    Time.timeScale = 0;
 		    winPanel.SetActive(true);
@@ -44,7 +44,7 @@ public class SceneChange : MonoBehaviour
 		    redIn = true;
 	    }
 
-	    if (greenIn == true && redIn == true && currentBuildIndex < 6)
+	    if (greenIn == true && redIn == true && currentBuildIndex < 8)
 	    {
 		    SceneManager.LoadScene(currentBuildIndex+1);
 	    }
